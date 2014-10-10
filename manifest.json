@@ -21,11 +21,9 @@
         "default_popup": "popup.html"
     },
     
-    "content_scripts": [
-    {
+    "content_scripts": [{
         "matches": ["http://reader.aol.com/*"],
         "js": ["jquery-1.10.2.min.js", "normalizer.js", "script.js"],
         "run_at": "document_end"
-    }
-  ]
+    }]
 }

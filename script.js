@@ -16,7 +16,7 @@ function listener() {
     if ($("#feed-content").length > 0) { 
         running = true;
         $("#feed-content .article-list article").each(function(index) {
-            var titleElement = $(this).find("p.title");
+            var titleElement = $(this).find("span.title");
             var title = normalize(titleElement.text());
             for (var i = 0; i < filters.length; i++) {
                 if (title.indexOf(filters[i]) >= 0) {

@@ -10,10 +10,14 @@ var storage = chrome.storage.local;
 storage.get({ "rowStyle":"", "titleStyle":"", "filter":"" } , function(items) {
     if (items.rowStyle) {
         $("#rowStyle").val(items.rowStyle);
+    } else {
+        $("#rowStyle").val("border-left: 5px solid #9933CC");
     }
+    
     if (items.titleStyle) {
         $("#titleStyle").val(items.titleStyle);
     }
+    
     if (items.filter) {
         $("#data").val(items.filter);
     }
